@@ -1,11 +1,14 @@
-body,
-html {
+body, html {
   width: 100%;
   height: 100%;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+.page-header {
+  z-index: 1;
 }
 
 .page-header-image {
@@ -19,32 +22,123 @@ body {
 }
 
 .bg-primary {
-  background-color: #010048 !important;
+  background-color: rgb(64, 85, 106) !important;
 }
 
-.sidebar-collapse .navbar-collapse::before{
-  background: linear-gradient(#010048,#000000 80%);
+.sidebar-collapse .navbar-collapse::before {
+  background: linear-gradient(rgb(64, 85, 106), #000000 80%);
 }
 
 .navbar-brand {
   font-size: large!important;
 }
 
-.brand{
+.brand {
   animation-name: fadeIn;
   animation-duration: 1.1s;
 }
-.brand .h1-seo{
+
+.brand .h1-seo {
   font-size: 3.2rem;
   margin-bottom: .5rem;
 }
 
-.brand h3{
+.brand h3 {
   margin: 0;
 }
+
 @keyframes fadeIn {
-  0%   {opacity: 0;}
-  25%  {opacity: .25;}
-  50%  {opacity: .50;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: .25;
+  }
+  50% {
+    opacity: .50;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.side-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-padding {
+  list-style: none;
+  padding: 0;
+}
+
+.peopleInfo {
+  background-image: url('handshake.jpg');
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+}
+
+.peopleInfo h2, .testimony h3 {
+  margin: 0;
+}
+
+section .section-inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .section-inner h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.filter-color {
+  background: linear-gradient(0deg, rgba(44, 44, 44, .2), rgba(0, 0, 0, .8));
+}
+
+.filter-color-blue {
+  background: linear-gradient(0deg, rgba(64, 85, 106, 0.8), rgba(0, 0, 0, .2));
+}
+
+.testimony {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#testimony-text {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.bg-gold {
+  background-color: rgba(216, 189, 166, 0.2);
+}
+
+.form-control:focus {
+  border: 1px solid rgb(216, 189, 166) !important;
+  border-left: 0 !important;
+}
+
+.form-group.input-group-focus .input-group-prepend .input-group-text, .input-group.input-group-focus .input-group-prepend .input-group-text {
+  border-left: 1px solid rgb(216, 189, 166);
+}
+
+.input-group-focus .input-group-text {
+  border-left: 1px solid rgb(216, 189, 166);
+  border-color: rgb(216, 189, 166);
+}
+
+textarea.form-control:active, textarea.form-control:focus {
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
 }
