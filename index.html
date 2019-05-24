@@ -10,14 +10,11 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
   <meta name="viewport" content="width=device-width" />
 
   <!--     Fonts and icons     -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-
-
 
   <!-- Bootstrap core CSS     -->
   <link rel="stylesheet"
@@ -25,6 +22,7 @@
   <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/now-ui-kit.min.css?v1.2.0"
     rel="stylesheet" />
   <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/demo/demo.css" rel="stylesheet">
+  <link rel="icon" href="data:,">
   <style>
     .navbar .navbar-nav .nav-link:not(.btn) i.fa {
       font-size: 18px;
@@ -129,7 +127,7 @@
 
       <a name="signup">
       </a>
-      <form class="section section-contact-us text-center" name="contact" method="POST" action="thanks">
+      <form class="section section-contact-us text-center" name="contact" method="POST" action="signup">
         <input type="hidden" name="form-name" value="contact">
         <div class="container">
           <h2 class="title">Apply for this opportunity</h2>
@@ -151,10 +149,10 @@
                     <i class="now-ui-icons ui-1_email-85"></i>
                   </span>
                 </div>
-                <input name="email" type="text" class="form-control" placeholder="Email..." minlength="1" required="">
+                <input name="email" type="email" class="form-control" placeholder="Email..." minlength="1" required="">
               </div>
               <div class="textarea-container">
-                <textarea class="form-control" name="Message" rows="4" cols="80" placeholder="Type a message..."
+                <textarea class="form-control" name="message" rows="4" cols="80" placeholder="Type a message..."
                   minlength="1" required=""></textarea>
               </div>
               <div class="send-button">

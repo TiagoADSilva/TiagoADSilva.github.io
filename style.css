@@ -21,6 +21,24 @@ body {
   z-index: -1;
 }
 
+.header-padding {
+  padding-top: 30px;
+}
+
+.index-page .page-header .container>.content-center {
+  top: 57%;
+}
+
+.congrats-header-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("trump.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
 .bg-primary {
   background-color: rgb(64, 85, 106) !important;
 }
@@ -112,6 +130,19 @@ section .section-inner h2 {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.certificate {
+  padding: 2rem;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#certificate-text {
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
 #testimony-text {
