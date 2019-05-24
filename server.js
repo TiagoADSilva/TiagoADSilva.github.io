@@ -13,7 +13,7 @@ app.use(express.json());
 
 const router = express.Router();
 router.get('/', (req, res) => {
-  res.sendFile('/index.html');
+  res.sendFile('/first.html');
 });
 
 router.post('/signup', (req, res) => {
