@@ -1,0 +1,29 @@
+{
+  "name": "mockedbiz",
+  "version": "1.0.0",
+  "description": "mocked website for a mocked business",
+  "main": "server-local.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server-local.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiagoADSilva/mockedbiz.git"
+  },
+  "keywords": [
+    "mockedbiz",
+    "mocked"
+  ],
+  "author": "Tiago Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiagoADSilva/mockedbiz/issues"
+  },
+  "homepage": "https://github.com/TiagoADSilva/mockedbiz#readme"
+}
